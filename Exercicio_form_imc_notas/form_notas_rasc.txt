@@ -1,0 +1,29 @@
+   <?php
+      	      $media= 0
+              $media= ($n1 + $n2) / 2
+              if ($media < 4.0){
+                echo= "Reprovado";
+        }else if ($media >= 4.0 => 6.0){
+                echo= "Exame Final";
+        }else
+               echo= "Aprovado";
+    ?>
+        <h1>Digite as duas notas</h1>
+		<form action="media_aluno.php" method="GET">
+			<label for="id$nome_aluno">Informe o Nome do aluno(a,e)</label>
+			<br>
+			<input type="text" name="$nome_aluno" id="id$nome_aluno"
+			       placeholder="Digite o nome">
+			<br>
+			<label for="id$nota1">Informe a Primeira Nota</label>
+			<br>
+			<input type="text" name="$nota1" id="id$nota1"
+			       placeholder="Digite a primeira nota">
+			<br>
+            <label for="id$nota2">Informe a Segunda Nota</label>
+			<br>
+			<input type="text" name="$nota2" id="id$nota2"
+			       placeholder="Digite a segunda nota">
+			<br>
+			<input type="submit" value="Ok" name="btsub">
+		</form>

@@ -1,0 +1,30 @@
+ <?php
+             $imc= $peso / ($altura * $altura)
+             $peso = str_replace(",", ".", $_GET["$peso"]);
+             $altura = str_replace(",", ".", $_GET["$altura"]);
+             if ($imc < 17){
+        echo= "Muito abaixo do peso";
+       }else if ($imc > 17 => 18,49){
+        echo= "Abaixo do peso"
+       }else if ($imc > 18,5 => 24,99){
+        echo= "Peso normal";
+       }else if ($imc > 25 => 29,99){
+        echo= "Acima do peso";
+       }else if ($imc > 30 => 34,99){
+        echo= "Obesidade I";
+       } else if ($imc > 35 => 39,99){
+        echo= "Obesidade II (severa)";
+       }else if ($imc > 25 => 29,99){
+        echo= "Obesidade III (mórbida)";
+       } 
+    ?>
+         <h1>Informar Peso e Altura</h1>
+    <form action="calculoimc.php" method="GET">
+        <label for="id$peso">Informe seu peso</label>
+        <imput type="text" id="id$peso" name="$peso"></imput>
+        <br>
+        <label for="id$altura">Informe sua altura</label>
+        <imput type="text" id="id$altura" name="$altura"></imput>
+        <br>
+        <imput type="submit"></imput>  
+    </form>
